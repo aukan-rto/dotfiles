@@ -1,0 +1,12 @@
+* {
+    font: "JetBrainsMono NF Bold 9";
+    background: #0c1018;      /* Tu negro de Kitty */
+    bg-alt: #1a1f29;          /* Un gris muy oscuro para contraste */
+    background-alt: #0c1018E0;
+    foreground: #6DDE00;      /* Tu verde neón */
+    selected: #6DDE00;        /* Resaltado en verde */
+    active: #00fa5c;
+    urgent: #ff5555;          /* Rojo para alertas (opcional) */
+
+    img-background: url("~/.config/bspwm/rices/h4ck3r/rofi.webp", width);
+}

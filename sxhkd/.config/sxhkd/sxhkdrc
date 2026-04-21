@@ -1,0 +1,49 @@
+# Terminal (Kitty)
+super + Return
+    kitty
+
+# Lanzador de aplicaciones (Rofi)
+super + s
+    rofi -show drun -theme ~/dotfiles/rofi/.config/rofi/style_3.rasi
+
+# Recargar configuración de bspwm y sxhkd
+super + alt + r
+    bspc wm -r
+
+# Cerrar ventana activa
+super + q
+    bspc node -c
+
+#____________________________________________
+####### --- GESTIÓN DE VENTANAS --- #########
+#--------------------------------------------
+
+# Cambiar el foco entre ventanas (Uso de Alt)
+super + alt + {Left,Down,Up,Right}
+    bspc node -f {west,south,north,east}
+
+# Mover la ventana activa (Shift)
+super + shift + {Left,Down,Up,Right}
+    bspc node -s {west,south,north,east}
+
+# Alternar entre modo flotante y tiling
+super + t
+    bspc node -t {floating,tiled}
+
+# Alternar pantalla completa
+super + f
+    bspc node -t "~"fullscreen
+
+# Cambiar de escritorio (Anterior/Siguiente)
+super + {Left,Right}
+    bspc desktop -f {prev,next}
+
+# Mover la ventana activa a otro escritorio
+super + ctrl + {Left,Right}
+    bspc node -d {prev,next} --follow
+
+# Enviar escritorio a (1 al 8)
+super + ctrl + {1-8}
+	bspc node -d '^{1-8}' --follow
+
+
