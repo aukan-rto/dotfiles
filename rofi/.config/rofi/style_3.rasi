@@ -101,8 +101,8 @@ element normal.normal {
 }
 
 element selected.normal {
-    background-color:            inherit;
-    text-color:                  @selected;
+    background-color:            @selected;
+    text-color:                  @background;
 }
 
 element-icon {

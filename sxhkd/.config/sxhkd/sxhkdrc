@@ -1,10 +1,10 @@
+#____________________________________________
+######### ------- GENERAL --------- #########
+#--------------------------------------------
+
 # Terminal (Kitty)
 super + Return
     kitty
-
-# Lanzador de aplicaciones (Rofi)
-super + s
-    rofi -show drun -theme ~/dotfiles/rofi/.config/rofi/style_3.rasi
 
 # Recargar configuración de bspwm y sxhkd
 super + alt + r
@@ -46,4 +46,64 @@ super + ctrl + {Left,Right}
 super + ctrl + {1-8}
 	bspc node -d '^{1-8}' --follow
 
+# Rotar ventana (cambia horizontal <-> vertical)
+super + r
+    bspc node @/ -R 90
+
+#____________________________________________
+########## -------- AUDIO -------- ##########
+#--------------------------------------------
+
+XF86AudioRaiseVolume
+    pactl set-sink-volume @DEFAULT_SINK@ +5%
+
+XF86AudioLowerVolume
+    pactl set-sink-volume @DEFAULT_SINK@ -5%
+
+XF86AudioMute
+    pactl set-sink-mute @DEFAULT_SINK@ toggle
+
+
+#____________________________________________
+########## ----- ILUMINACION ----- ##########
+#--------------------------------------------
+
+XF86MonBrightnessUp
+    brightnessctl set +10%
+
+XF86MonBrightnessDown
+    brightnessctl set 10%-
+
+
+#____________________________________________
+########### ----- SCREENSHOT ----- ##########
+#--------------------------------------------
+
+# Pantalla completa
+Print
+    maim ~/Imágenes/ScreenShots/screenshot_$(date +%Y-%m-%d-%H%M%S).png
+
+# Selección de área
+super + Print
+    maim -s --noopengl ~/Imágenes/ScreenShots/screenshot_$(date +%Y-%m-%d-%H%M%S).png
+
+#____________________________________________
+########## ---- APLICACIONES ----- ##########
+#--------------------------------------------
+
+# Rofi
+super + s
+    rofi -show drun -theme ~/dotfiles/rofi/.config/rofi/style_3.rasi
+
+# Navegador
+super + b
+    firefox
+
+# Explorador de archivos
+super + e
+    thunar
+
+# Notepad Geany
+super + n
+	geany
 
