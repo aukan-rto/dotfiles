@@ -1,4 +1,4 @@
-// # z0mbi3 - https://github.com/gh0stzk/dotfiles
+// # Aukan - https://github.com/aukan-rto
 
 
 configuration {
@@ -10,9 +10,8 @@ configuration {
 	disable-history:		true;
 }
 
-// @import "shared.rasi"
 
-/* Definimos los colores directamente aquí */
+/* Definición de colores */
 * {
     background:    #1e1e2e;   /* fondo general */
     foreground:    #89b489;   /* texto normal */
