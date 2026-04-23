@@ -2,16 +2,22 @@
 
 
 configuration {
-	modi: 						"drun";
-	icon-theme: 				"Papirus-Dark";
-	application-fallback-icon: 	"Adwaita";
-    show-icons:                 true;
-	drun-display-format:        "{name}";
-	disable-history:            true;
+	modi:				"drun";
+	icon-theme:			"Papirus-Dark";
+	application-fallback-icon:	"Adwaita";
+	show-icons:			true;
+	drun-display-format:		"{name}";
+	disable-history:		true;
 }
 
+// @import "shared.rasi"
 
-@import "shared.rasi"
+/* Definimos los colores directamente aquí */
+* {
+    background:    #1e1e2e;   /* fondo general */
+    foreground:    #89b489;   /* texto normal */
+    selected:      #6DDE00;   /* color de selección */
+}
 
 
 window {
