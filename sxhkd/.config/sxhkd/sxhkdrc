@@ -93,7 +93,7 @@ super + Print
 
 # Rofi
 super + s
-    rofi -show drun -theme ~/dotfiles/rofi/.config/rofi/aukan_theme.rasi
+    rofi -show drun -theme ~/dotfiles/rofi/.config/rofi/aukan_2.rasi
 
 # Navegador
 super + b

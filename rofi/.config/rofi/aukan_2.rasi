@@ -1,0 +1,120 @@
+// Aukan → github.com/aukan-rto
+
+
+configuration {
+    modi: "drun";
+    icon-theme: "Papirus-Dark";
+    show-icons: true;
+    drun-display-format: "{name}";
+    disable-history: true;
+}
+
+/* Paleta hacker verdosa/neón */
+* {
+	background:		#14141f;   /* fondo general */
+	background-color:	#14141f;
+	foreground:		#8fa98f;   /* texto normal */
+	selected:		#32cc12;   /* verde neón para selección */
+	perimeter:		#00ff00;
+	accent:			#6DDE00;   /* verde fosforescente */
+	highlight:		#a0a0a0;   /* input */
+}
+
+
+window {
+    transparency: "real";
+    background-color: @background;
+}
+
+mainbox {
+    children: [inputbar, listview];
+    spacing: 20px;
+    padding: 20px;
+    border: 1px;
+    border-color: @perimeter;
+}
+
+
+
+inputbar {
+	padding: 5px;
+	children: [prompt, textbox-prompt-colon, entry, case-indicator];
+	background-color: transparent;
+	text-color: @foreground;
+}
+
+prompt {
+    text-color: @highlight;
+}
+
+textbox-prompt-colon {
+	expand: false;
+	str: ":";
+	text-color: @foreground;
+}
+
+entry {
+    text-color: @foreground;
+    placeholder: "Search";
+    placeholder-color: @foreground;
+}
+
+case-indicator {
+    text-color: @accent;
+ 
+}
+
+button, textbox {
+    background-color: @background;
+    text-color: @foreground;
+    padding: 5px;
+}
+
+button selected {
+    background-color: @selected;
+    text-color: @background;
+}
+
+listview {
+    scrollbar: true;
+    margin: 0 10px 0 20px;
+    text-color: @foreground;
+}
+
+scrollbar {
+    background-color: @background;
+    handle-color: @selected;
+    handle-width: 10px;
+    border: 0 1px;
+    border-color: @selected;
+}
+
+element {
+    padding: 5px;
+    spacing: 5px;
+    children: [element-icon, element-text];
+}
+
+element normal {
+    background-color: transparent;
+    text-color: @foreground;
+}
+
+element selected {
+    background-color: @selected;
+    text-color: @background;
+}
+
+element normal urgent {
+    text-color: @accent;
+}
+
+element normal active {
+    text-color: @background-color;
+}
+
+element-icon, element-text {
+    background-color: inherit;
+    text-color: inherit;
+}
+
