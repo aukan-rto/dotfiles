@@ -1,6 +1,10 @@
-#  ╔═╗╔═╗╦ ╦╦═╗╔═╗  ╔═╗╔═╗╔╗╔╔═╗╦╔═╗	- z0mbi3
-#  ╔═╝╚═╗╠═╣╠╦╝║    ║  ║ ║║║║╠╣ ║║ ╦	- https://github.com/gh0stzk/dotfiles
-#  ╚═╝╚═╝╩ ╩╩╚═╚═╝  ╚═╝╚═╝╝╚╝╚  ╩╚═╝	- My zsh conf
+
+#  _________________________________
+#  ╔═╗╔═╗╦ ╦╦═╗╔═╗  ╔═╗┌─┐┌┬┐┌─┐┬┌─┐
+#  ╔═╝╚═╗╠═╣╠╦╝║    ║  │ ││││├┤ ││ ┬
+#  ╚═╝╚═╝╩ ╩╩╚═╚═╝  ╚═╝└─┘┴ ┴└  ┴└─┘
+#  ____________________________Aukan
+
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
@@ -10,9 +14,9 @@
 #   └┘ ┴ ┴┴└─└─┘
 export VISUAL="${EDITOR}"
 export EDITOR='geany'
-export BROWSER='firefox'
+export BROWSER='librewolf'
 export HISTORY_IGNORE="(ls|cd|pwd|exit|sudo reboot|history|cd -|cd ..)"
-export SUDO_PROMPT="Deploying root access for %u. Password pls: "
+export SUDO_PROMPT="[#] AUTHENTICATION REQUIRED FOR ROOT PRIVILEGES: "
 export BAT_THEME="base16"
 
 if [ -d "$HOME/.local/bin" ] ;
