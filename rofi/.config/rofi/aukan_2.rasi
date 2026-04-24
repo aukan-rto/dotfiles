@@ -16,8 +16,7 @@ configuration {
 	foreground:		#8fa98f;   /* texto normal */
 	selected:		#32cc12;   /* verde neón para selección */
 	perimeter:		#00ff00;
-	accent:			#6DDE00;   /* verde fosforescente */
-	highlight:		#a0a0a0;   /* input */
+	accent:			#3d7a2a;   /* verde fosforescente */
 }
 
 
@@ -44,12 +43,12 @@ inputbar {
 }
 
 prompt {
-    text-color: @highlight;
+    text-color: @background;
 }
 
 textbox-prompt-colon {
 	expand: false;
-	str: ":";
+	str: "> ";
 	text-color: @foreground;
 }
 
@@ -110,11 +109,17 @@ element normal urgent {
 }
 
 element normal active {
-    text-color: @background-color;
+    text-color: @foreground;
 }
 
-element-icon, element-text {
+element-icon {
     background-color: inherit;
     text-color: inherit;
+}
+
+element-text {
+    background-color: inherit;
+    text-color: inherit;
+    highlight: @accent;
 }
 
