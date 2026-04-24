@@ -97,7 +97,7 @@ super + s
 
 # Navegador
 super + b
-    firefox
+    librewolf
 
 # Explorador de archivos
 super + e
