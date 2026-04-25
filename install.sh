@@ -65,7 +65,7 @@ maim feh shred lm_sensors openvpn pipewire inetutils whois \
 networkmanager pamixer playerctl alsa-card-profiles \
 openssl gcc rustup go python python-pip python-pipx \
 awk lua perl ruby php xclip xorg wc which openssh stow \
-bat openldap less tmux libreoffice
+bat openldap tmux libreoffice yt-dlp 
 
 # -------------------------
 # paru (AUR helper)
