@@ -89,7 +89,7 @@ log "Instalando paquetes AUR"
 paru -S --noconfirm --needed \
 yazi code-oss librewolf geany obsidian thunar ly \
 jetbrains-mono-nerd-font symbols-nerd-font ttf-font-awesome-6 \
-qogirr-cursor-theme tokyonight-gtk-theme tokyonight-icon-theme
+qogir-cursor-theme tokyonight-gtk-theme
 
 # -------------------------
 # BlackArch tools
