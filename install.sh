@@ -59,7 +59,7 @@ fi
 log "Instalando paquetes base"
 
 sudo pacman -S --needed --noconfirm \
-coreutils mlocate p7zip curl grep eza find jq iptables \
+coreutils mlocate p7zip firefox curl grep eza find jq iptables \
 bspwm sxhkd polybar kitty rofi picom dunst neovim zsh git \
 maim feh shred lm_sensors openvpn pipewire inetutils whois \
 networkmanager pamixer playerctl alsa-card-profiles \
@@ -87,7 +87,7 @@ fi
 log "Instalando paquetes AUR"
 
 paru -S --noconfirm --needed \
-yazi code-oss librewolf geany obsidian thunar ly \
+yazi code-oss geany obsidian thunar ly \
 jetbrains-mono-nerd-font symbols-nerd-font ttf-font-awesome-6 \
 qogir-cursor-theme tokyonight-gtk-theme
 
