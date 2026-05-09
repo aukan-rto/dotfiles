@@ -1,9 +1,10 @@
 #!/bin/sh
 
-IFACE=$(ip addr | grep tun0 | awk '{print $2}' | tr -d ':')
+IFACE=$(ip -o link show | awk -F': ' '{print $2}' | grep -E '^(tun|wg)[0-9]+' | head -n1)
 
-if [ "$IFACE" = "tun0" ]; then
-    echo "$(ip addr show tun0 | grep -oP '(?<=inet\s)\d+(\.\d+){3}')"
+if [ -n "$IFACE" ]; then
+    IP=$(ip -4 addr show "$IFACE" | grep -oP '(?<=inet\s)\d+(\.\d+){3}')
+    echo "$IP"
 else
     echo "Desconectado"
 fi
