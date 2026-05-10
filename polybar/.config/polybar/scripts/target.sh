@@ -7,12 +7,12 @@ TARGET_FILE="/home/$USER/.config/polybar/scripts/target.txt"
 touch "$TARGET_FILE"
 
 # Leemos el contenido
-CONTENT=$(cat "$TARGET_FILE")
+CONTENT=$(cat "$TARGET_FILE" | tr -d '\n')
 
 # Si el contenido está vacío, mostramos "No Target" en gris
 # Si tiene algo, lo mostramos en blanco/negro según tu tema
 if [ -z "$CONTENT" ]; then
-    echo "%{F#666}No Target%{F-}"
+    echo -n "%{F#666}No Target%{F-}"
 else
-    echo "%{F#ffffff}$CONTENT%{F-}"
+    echo -n "%{F#ffffff}$CONTENT%{F-}"
 fi
