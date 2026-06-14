@@ -33,7 +33,7 @@ xset s noblank
 xsetroot -cursor_name left_ptr &
 sxhkd &
 picom --config ~/.config/picom/picom.conf &
-feh --bg-fill ~/dotfiles/wallpapers/wall-01.webp &
+feh --bg-fill ~/dotfiles/wallpapers/wallpaper02.png &
 
 # Lanzamos script y asegurar de que sea ejecutable.
 if [ -x "$HOME/.config/polybar/launch.sh" ]; then
