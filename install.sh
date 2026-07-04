@@ -97,7 +97,7 @@ qogir-cursor-theme tokyonight-gtk-theme
 log "Instalando herramientas BlackArch"
 
 sudo pacman -S --noconfirm --needed \
-impacket radare2 arp-scan ncat nmap ffuf hashcat wpscan responder \
+impacket radare2 arp-scan ncat nmap testssl.sh ffuf hashcat wpscan responder \
 macchanger netexec whatweb nuclei dnsx subfinder chaos-client uncover \
 naabu httpx metasploit evil-winrm caido seclists powersploit
 
