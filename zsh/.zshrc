@@ -16,7 +16,7 @@ export VISUAL="${EDITOR}"
 export EDITOR='geany'
 export BROWSER='firefox'
 export HISTORY_IGNORE="(ls|cd|pwd|exit|sudo reboot|history|cd -|cd ..)"
-export SUDO_PROMPT="[#] AUTHENTICATION REQUIRED FOR ROOT PRIVILEGES: "
+export SUDO_PROMPT="󰳤 AUTENTICACIÓN: "
 export BAT_THEME="base16"
 
 if [ -d "$HOME/.local/bin" ] ;
