@@ -12,5 +12,5 @@ if [ -n "$ETH_IP" ]; then
 elif [ -n "$WLAN_IP" ]; then
     echo "${COLOR}󰖩 ${RESET}$WLAN_IP"
 else
-    echo "󰖪  Offline"
+    echo "󰖪    Offline    "
 fi
