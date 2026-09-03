@@ -167,7 +167,7 @@ alias lla='eza --icons=always --color=always -la --group-directories-first'
 alias tree='eza -T'
 
 alias dualmonitor="xrandr --output DP-2 --auto --right-of eDP-1 && bspc monitor eDP-1 -d 1 2 3 4 && bspc monitor DP-2 -d 5 6 7 8"
-alias singlemonitor="xrandr --output DP-2 --off && bspc monitor eDP-1 -d 1 2 3 4 5 6 7 8"
+alias singlemonitor="xrandr --output DP-2 --off && bspc monitor DP-2 -r && bspc monitor eDP-1 -d 1 2 3 4 5 6 7 8"
 
 alias target='echo "$1" > ~/.config/polybar/scripts/target.txt'
 
